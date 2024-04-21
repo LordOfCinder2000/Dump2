@@ -19,6 +19,7 @@ bot.on("chat_member", async (message) => {
         lang: "en",
         status: "active",
         state: null,
+        refUser: [],
       });
       break;
     case "left":
@@ -31,6 +32,7 @@ bot.on("chat_member", async (message) => {
         lang: "en",
         status: "inactive",
         state: null,
+        refUser: [],
       });
       break;
     default:

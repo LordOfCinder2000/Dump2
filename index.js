@@ -13,7 +13,7 @@ bot.on("chat_member", async (message) => {
       await updateUser(message.from.id, {
         id: message.from.id,
         firstName: message.from.first_name,
-        lastName: message.from.last_name,
+        lastName: message.from?.last_name,
         balance: 50,
         referral: 0,
         lang: "en",
@@ -25,7 +25,7 @@ bot.on("chat_member", async (message) => {
       await updateUser(message.from.id, {
         id: message.from.id,
         firstName: message.from.first_name,
-        lastName: message.from.last_name,
+        lastName: message.from?.last_name,
         balance: 0,
         referral: 0,
         lang: "en",
